@@ -18,12 +18,14 @@ int main() {
   cin >> p1;
   cout << "Masukkan Nama Player 2 : ";
   cin >> p2;
+  cout << "---------------------------------" << endl;
   // Loop sampai salah satu Player menebak angka yang benar
   while (!benar) {
     cout << p1 << ", silakan tebak angka (1-100): ";
     cin >> tebakan;
     cout << p2 << ", silakan tebak angka (1-100): ";
     cin >> tebakan2;
+    cout << endl;
 	
     if (tebakan == angka_acak) {
       benar = true;
@@ -38,10 +40,10 @@ int main() {
     if (tebakan2 == angka_acak) {
         benar = true;
         cout << "Selamat, " << p2 << " menang!" << endl;
-    } else if (tebakan < angka_acak) {
-      cout << "Tebakan " << p2 << " terlalu rendah." << endl;
-    } else if (tebakan > angka_acak) {
-      cout << "Tebakan " << p2 << " terlalu tinggi." << endl;
+    } else if (tebakan2 < angka_acak) {
+      cout << "Tebakan " << p2 << " terlalu rendah." << endl << "---------------------------------" << endl;
+    } else if (tebakan2 > angka_acak) {
+      cout << "Tebakan " << p2 << " terlalu tinggi." << endl << "---------------------------------" << endl;
     }
     }
 
