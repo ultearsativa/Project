@@ -70,6 +70,6 @@ int main() {
   else if (bermain == "tidak"){
   	cout << "SAMPAI BERTEMU DILAIN KESEMPATAN!";
   }
-	
+	gka
   return 0;
 }
