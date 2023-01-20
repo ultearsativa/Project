@@ -66,6 +66,6 @@ int main() {
   else if (bermain == "tidak"){
   	cout << "SAMPAI BERTEMU DILAIN KESEMPATAN!";
   }
-
+while "kembali"
   return 0;
 }
