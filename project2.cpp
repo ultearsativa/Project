@@ -14,24 +14,28 @@ int main() {
   // Variabel untuk menyimpan tebakan Player
   int tebakan,tebakan2;
   bool benar = false;
-  
+  cout<< "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="<<endl;
   cout << "SELAMAT DATANG DI PERMAINAN TEBAK ANGKA!!!" << endl;
-  cout << "====================PERATURAN PERMAINAN====================" << endl;
+  cout<< "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="<<endl<<endl;
+  	
+  cout << "==============<<<<<< PERATURAN PERMAINAN >>>>>>==============" << endl;
   cout << "1. Anda harus menebak angka dengan lingkup 1-100" << endl;
   cout << "2. Permainan ini membutuhkan 2 pemain" << endl;
   cout << "3. Jika tebakan pemain terlalu tinggi/rendah akan muncul keterangan di bawahnya" << endl;
   cout << "4. Jika tebakan pemain benar akan ada keterangan dan permainan akan berakhir" << endl;
-  cout << "===========================================================" << endl;
+  cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-==-=-==-=" << endl;
   cout << "Apakah Kalian ingin bermain ? (Ya atau Tidak) : ";
   cin >> bermain;
   
   if (bermain == "ya"){
-  cout << "\n=================SELAMAT BERMAIN===================" << endl;
+  	
+  cout<<"=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="<<endl;
+  cout << "\n==========<<<<< SELAMAT BERMAIN >>>>>==========" << endl;
   cout << "Masukkan Nama Player 1 : ";
   cin >> p1;
   cout << "Masukkan Nama Player 2 : ";
   cin >> p2;
-  cout << "---------------------------------" << endl;
+  cout <<"=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="<< endl;
   
   // Loop sampai salah satu Player menebak angka yang benar
   while (!benar) {
@@ -43,7 +47,7 @@ int main() {
 	
     if (tebakan == angka_acak) {
       benar = true;
-      cout << "Selamat, " << p1 << " menang!" << endl;
+      cout << "Selamat!!!!!, " << p1 << " menang!!" << endl;
     } else if (tebakan < angka_acak) {
       cout << "Tebakan " << p1 << " terlalu rendah." << endl;
     } else if (tebakan > angka_acak) {
